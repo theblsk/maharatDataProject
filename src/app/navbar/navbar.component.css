@@ -2,10 +2,12 @@
   color: black;
   padding-left: 30px;
   animation: brandAnimate 1s ease-in-out forwards;
+  
 }
 
 .brand h2 {
-  font-size: 150%;
+  font-size: clamp(1rem,1.2rem + 1vw, 1.4rem);
+
   margin: 0;
 }
 .navBar {
@@ -20,7 +22,9 @@
     align-items: center;
     justify-content: center;
     z-index: 9;
+    transition: background-color 800ms ease-in;
   }
+
 @keyframes navAnimate {
   from {
     opacity: 0;

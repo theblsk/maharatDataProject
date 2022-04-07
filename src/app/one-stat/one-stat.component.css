@@ -1,0 +1,23 @@
+.statContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.statPic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.statButton{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statButton button{
+    border: 1px black solid;
+    outline: none;
+    width: 100%;
+}

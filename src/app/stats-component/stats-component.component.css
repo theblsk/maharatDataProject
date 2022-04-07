@@ -1,0 +1,40 @@
+.statsSlider{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.stat{
+    flex: 1;
+    opacity: 0.1;
+    transition: opacity 200ms ease-in;
+}
+.stat:hover{
+    flex: 1;
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+
+}
+.theButtons{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.theButtons button{
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.505);
+}
+.show{
+    flex: 1;
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+.hide{
+    display: none;
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+
+}

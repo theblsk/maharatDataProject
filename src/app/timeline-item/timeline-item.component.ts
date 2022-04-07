@@ -15,19 +15,16 @@ export class TimelineItemComponent implements OnInit {
   ngOnInit(): void {
     var observer = new IntersectionObserver(
       (entries) => {
-        let listItem = document.getElementById(this.itemID);
-        let image = listItem?.querySelector('.navImage');
-        if (entries[0].intersectionRatio === 1) {
-          if (image?.classList.toString() === 'navImage') {
-            image.classList.remove('navImage');
-            image.classList.toggle('navImageEnlarged');
-          }
-        } else if (entries[0].intersectionRatio === 0) {
-          if (image?.classList.toString() === 'navImageEnlarged') {
-            image.classList.remove('navImageEnlarged');
-            image.classList.toggle('navImage');
-          }
-        }
+        entries.forEach(entry => {
+          let listItem = document.getElementById(this.itemID);
+          let image = listItem?.querySelector('.navImage');
+          if (entry.intersectionRatio === 1) {
+            if (image?.classList.toString() === 'navImage') {
+              image.classList.remove('navImage');
+              image.classList.toggle('navImageEnlarged');
+            }
+          }           
+        })
       },
       { threshold: [1] }
     );

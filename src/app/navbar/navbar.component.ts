@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
   showMenu(){
     let navOptions = document.getElementById('options')

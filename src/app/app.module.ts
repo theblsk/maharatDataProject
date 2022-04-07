@@ -9,6 +9,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { IntroComponent } from './intro/intro.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineItemComponent } from './timeline-item/timeline-item.component';
+import { StatsComponentComponent } from './stats-component/stats-component.component';
+import { OneStatComponent } from './one-stat/one-stat.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TimelineItemComponent } from './timeline-item/timeline-item.component';
     MainPageComponent,
     IntroComponent,
     TimelineComponent,
-    TimelineItemComponent
+    TimelineItemComponent,
+    StatsComponentComponent,
+    OneStatComponent
   ],
   imports: [
     BrowserModule,

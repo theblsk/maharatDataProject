@@ -1,0 +1,15 @@
+<div class="statisticsTitle">
+  <h1>الاحصائيات</h1>
+</div>
+<div class="statsSlider">
+  <div class="theButtons">
+    <div class="statButton">
+      <button class="btn" (click)="show('expectation')">توقع</button>
+    </div>
+    <div class="statButton">
+      <button class="btn" (click)="show('trust')">الثقة</button>
+    </div>
+  </div>
+  <oneStat class="stat show" id="expectation" [picture]="expectPic"></oneStat>
+  <oneStat class="stat hide" id="trust" [picture]="trustPic"></oneStat>
+</div>
