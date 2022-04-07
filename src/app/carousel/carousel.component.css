@@ -1,0 +1,14 @@
+.carousel-item img {
+  height: 93vh;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .carousel-item img {
+      object-fit: cover;
+  }
+}
+
+

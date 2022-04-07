@@ -1,0 +1,35 @@
+@media only screen and (min-width: 801px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  border: 3px solid black;
+  width: 30px;
+  margin-bottom: 2px;
+  border-radius: 25px;
+
+}
+
+.hamburger {
+  width: 31px;
+  height: 31px;
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  z-index: 200;
+}
+
+.allContent{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+

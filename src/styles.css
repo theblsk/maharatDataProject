@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+@font-face{
+    font-family: droid;
+    src: url(./assets/fonts/droidKufi.ttf)
+}
+
+
+
+:root{
+    --dark-blue: #0f1e55;
+    --light-blue: #96d7fa;
+    --azure: #c8e6f5;
+    --barelyOrange: #f5b96e;
+    --orange: #ff782d;
+}
+
+body{
+    font-family: droid;
+    background-color: white;
+}
+
