@@ -11,5 +11,24 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  showMore(){
+    let extraContent = document.getElementById('moreContent')
+    extraContent?.classList.toggle('show')
+    let button = document.getElementById('readMoreButton')
+    button?.classList.toggle('hidden')
+    let intro = document.getElementById('intro')
+    intro?.classList.toggle('introductionBigger')
+    let arrow = document.getElementById('arrowUp')
+    arrow?.classList.toggle('showArrow')
+  }
+  hideExtra(){
+    let extraContent = document.getElementById('moreContent')
+    extraContent?.classList.remove('show')
+    let button = document.getElementById('readMoreButton')
+    button?.classList.remove('hidden')
+    let intro = document.getElementById('intro')
+    intro?.classList.remove('introductionBigger')
+    let arrow = document.getElementById('arrowUp')
+    arrow?.classList.remove('showArrow')
+  }
 }

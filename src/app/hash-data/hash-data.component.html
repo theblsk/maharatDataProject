@@ -1,0 +1,31 @@
+<div class="hashStat">
+  <div class="imageSelector">
+    <ul class="list-group" id="hashList">
+      <li (click)="click('explosion2')" class="list-group-item activeHash" id="explosion2">انفجار_بيروت#</li>
+      <li (click)="click('coronaLB')"  class="list-group-item" id="coronaLB">كورونا_لبنان#</li>
+      <li (click)="click('explosion1')"  class="list-group-item" id="explosion1">تفجير بيروت#</li>
+      <li (click)="click('corona')"  class="list-group-item" id="corona">فيروس كورونا#</li>
+    </ul>
+  </div>
+  <div class="imagesContainer" id="hashImages">
+    <img
+      class="hashImage hide"
+      src="../../assets/stats/beirutExplosion1.webp"
+      alt=""
+      id="explosion1Image"
+    />
+    <img
+      class="hashImage show"
+      src="../../assets/stats/beirutExplosion2.webp"
+      alt=""
+      id="explosion2Image"
+    />
+    <img class="hashImage hide" src="../../assets/stats/corona.webp" alt="" id="coronaImage" />
+    <img
+      class="hashImage hide"
+      src="../../assets/stats/coronaLeb.webp"
+      alt=""
+      id="coronaLBImage"
+    />
+  </div>
+</div>

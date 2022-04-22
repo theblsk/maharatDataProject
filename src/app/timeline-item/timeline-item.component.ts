@@ -8,26 +8,28 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TimelineItemComponent implements OnInit {
   @Input() className = '';
   @Input() itemID = '';
-  @Input() imageSRC = '';
-
+  @Input() navImageSRC = '';
+  @Input() imageSRC = ''
+  @Input() imageID = '';
+  @Input() headLine = ''
+  @Input() textContent = ''
   constructor() {}
 
   ngOnInit(): void {
-    var observer = new IntersectionObserver(
+    const imageObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
-          let listItem = document.getElementById(this.itemID);
-          let image = listItem?.querySelector('.navImage');
-          if (entry.intersectionRatio === 1) {
-            if (image?.classList.toString() === 'navImage') {
-              image.classList.remove('navImage');
-              image.classList.toggle('navImageEnlarged');
-            }
-          }           
-        })
+        const item = entries[0];
+        const container = document.getElementById(this.imageID);
+        const image = container?.getElementsByClassName('navImage')
+        if (image)
+          image[0]?.classList.toggle('navImageEnlarged', item.isIntersecting);
+        const timeText = container?.getElementsByClassName('timeText')
+        if (timeText)
+          timeText[0].classList.toggle('show', item.isIntersecting)
       },
-      { threshold: [1] }
+      { threshold: 1 }
     );
-    observer.observe(document.getElementById(this.itemID) as Element);
+
+    imageObserver.observe(document.getElementById(this.itemID) as Element);
   }
 }

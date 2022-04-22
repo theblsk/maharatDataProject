@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'statistics',
   templateUrl: './stats-component.component.html',
@@ -13,6 +12,19 @@ export class StatsComponentComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  choose(entry) {
+    let list = document.getElementById('chooseList');
+    let elements = list.getElementsByClassName('list-group-item');
+    if (elements) {
+      for (let i = 0; i < elements.length; i++) {
+        if (elements[i].classList.toString().includes('active'))
+          elements[i].classList.remove('active');
+      }
+    }
+    let chosen = document.getElementById(entry);
+    chosen.classList.toggle('active');
+  }
+
   show(entry: any) {
     let guysToRemove = document.querySelectorAll('.stat');
 
@@ -20,7 +32,7 @@ export class StatsComponentComponent implements OnInit {
       let extract = item as HTMLElement;
       if (extract.classList.contains('show')) {
         extract.classList.remove('show');
-        extract.classList.toggle('hide')
+        extract.classList.toggle('hide');
       }
     });
     let guyToShow = document.getElementById(entry);

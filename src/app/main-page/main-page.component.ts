@@ -19,6 +19,14 @@ export class MainPageComponent implements OnInit {
 
 
   ngOnInit(): void {
+    const introObserver = new IntersectionObserver(entries =>{
+      const restOfContent = entries[0]
+      const navbar = document.getElementById('navbar')
+      navbar?.classList.toggle('navBarScrolled', restOfContent.isIntersecting)
+    },
+    {threshold: 0.1})
+
+    introObserver.observe(document.getElementById('restOfContent') as Element)
   }
 
 }

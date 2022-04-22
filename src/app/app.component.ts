@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'maharatDataProj';
 
+
+
+  ngOnInit(): void{
+
+  }
+
+
   hide() {
     let nav = document.getElementById('options');
     if (nav?.classList.toString() == 'options') {

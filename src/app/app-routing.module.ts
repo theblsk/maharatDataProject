@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { HashDataComponent } from './hash-data/hash-data.component';
 
 const routes: Routes = [
-  {path:'',component:MainPageComponent}
+  {path:'',component:DonutChartComponent},
+  {path:'bar',component:BarChartComponent},
+  {path:'hash', component:HashDataComponent}
 ];
 
 @NgModule({

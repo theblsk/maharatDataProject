@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-
+@font-face{
+    font-family: bebas;
+    src: url(./assets/fonts/bebas.ttf)
+}
 
 
 @font-face{
@@ -21,6 +24,6 @@
 
 body{
     font-family: droid;
-    background-color: white;
+    background-color: #E5E5E5;
 }
 

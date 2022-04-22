@@ -1,6 +1,94 @@
-.introduction {
-  margin-top: 20px;
+.introContent {
   text-align: justify;
   text-justify: inter-word;
+  padding-inline: 16%;
 }
 
+.introduction {
+
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+  background-color: #F5B96E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: height 400ms ease, min-height 400ms ease;
+}
+
+.introductionBigger {
+  height: 75vh;
+  min-height: 600px;
+
+
+  transition: height 400ms ease, min-height 400ms ease;
+}
+@media only screen and (max-width: 350px)
+{
+  .introduction{
+    min-height: 600px;
+  }
+  .introductionBigger{
+    min-height: 800px;
+  }
+}
+
+.read-more {
+  margin-left: 60%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  color: black;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 400ms ease, height 4s ease;
+
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 400ms ease, height 4s ease;
+  height: auto;
+
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  justify-self: flex-end;
+}
+
+.arrow #arrowUp {
+  padding-top: 10%;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.arrow .showArrow {
+  opacity: 1 !important;
+  transition: opacity 800ms ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .read-more{
+    margin-left: 0;
+  }
+  .arrow #arrowUp{
+    padding-top: 0;
+  }
+  .introContent{
+    padding-inline: 5%;
+    font-size: clamp(0.3rem,0.2rem + 4vw,0.8rem);
+  }
+}

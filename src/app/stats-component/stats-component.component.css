@@ -1,4 +1,4 @@
-.statsSlider{
+/* .statsSlider{
     display: flex;
     width: 100%;
     align-items: center;
@@ -37,4 +37,75 @@
     opacity: 0;
     transition: opacity 1000ms ease-in;
 
+} */
+
+.statPage{
+    width: 100%;
+    height: 100vh;
+
+}
+.statTitle{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+    color: #858585;
+    padding-right: 5%;
+}
+.statContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.oneStat {
+  width: 50%;
+}
+
+
+
+.choose {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 3%;
+}
+.choose .list-group{
+    width: 70%
+}
+.choose .list-group-item{
+    background-color: #E5E5E5;
+    border: none;
+}
+.active{
+    color: #FF782D!important;
+}
+@media only screen and (max-width: 650px)
+{
+    .statContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .choose{
+        width: 100%;
+        height: 30%;
+    }
+    .oneStat{
+        height: 70%;
+        width: 100%;
+        
+    }
+    .statPage{
+        height: 100vh;
+    }
+}
+.hideChart{
+    display: none;
 }

@@ -1,4 +1,4 @@
-<div class="statisticsTitle">
+<!-- <div class="statisticsTitle">
   <h1>الاحصائيات</h1>
 </div>
 <div class="statsSlider">
@@ -12,4 +12,38 @@
   </div>
   <oneStat class="stat show" id="expectation" [picture]="expectPic"></oneStat>
   <oneStat class="stat hide" id="trust" [picture]="trustPic"></oneStat>
+</div> -->
+
+<div class="statPage">
+  <div class="statTitle">
+    <h1>البيانات: الازمة بالارقام والوقائع</h1>
+  </div>
+  <div class="statContainer">
+    <div class="choose">
+      <ul class="list-group" id="chooseList">
+        <!-- <li
+          class="list-group-item"
+          id="horizontal"
+          (click)="choose('horizontal')"
+        >
+          نسبة بروز الموضوع و النسبة المئوية للتفاعل
+        </li> -->
+        <li class="list-group-item active" id="donut" (click)="choose('donut')" routerLink="/">
+          النسب المئوية للعواطف
+        </li>
+        <!-- <li class="list-group-item" id="barChart" (click)="choose('barChart')" >
+          المشاعر في يوليو
+        </li> -->
+        <li class="list-group-item" id="compare" (click)="choose('compare')" routerLink="/bar">
+          مقارنة المشاعر ما بين تموز وآب
+        </li>
+        <li class="list-group-item" id="hashtag" (click)="choose('hashtag')" routerLink="/hash">
+          التفاعل عبر ال Hashtags
+        </li>
+      </ul>
+    </div>
+    <div class="oneStat">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

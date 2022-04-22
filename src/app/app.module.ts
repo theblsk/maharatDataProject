@@ -10,7 +10,11 @@ import { IntroComponent } from './intro/intro.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineItemComponent } from './timeline-item/timeline-item.component';
 import { StatsComponentComponent } from './stats-component/stats-component.component';
-import { OneStatComponent } from './one-stat/one-stat.component';
+import { NgChartsModule } from 'ng2-charts';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { InterviewsComponent } from './interviews/interviews.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { HashDataComponent } from './hash-data/hash-data.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { OneStatComponent } from './one-stat/one-stat.component';
     TimelineComponent,
     TimelineItemComponent,
     StatsComponentComponent,
-    OneStatComponent
+    DonutChartComponent,
+    InterviewsComponent,
+    BarChartComponent,
+    HashDataComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,81 @@
+.interviewsTitle{
+    padding-right: 5%;
+    color:#858585;
+}
+.interviewBigBoy{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.interviewContent{
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+    grid-template-rows: 500px;
+    justify-content: center;
+    padding-inline: 2%;
+}
+.interview{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-blue);
+}
+@media only screen and (max-width: 675px) {
+    .interviewContent{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 250px;        
+    }
+    .interview{
+        height: 300px;
+    }
+}
+
+.interview .title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.interview .title h1{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5%;
+
+}
+.interviewText{
+    width: 100%;
+    height: 60%;
+  
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+    mask-image: linear-gradient(180deg, #000 60%, transparent);
+
+}
+.interviewText p{
+    font-size: 12px;
+    color: #858585;
+    padding-inline: 3%;
+}
+
+.buttonCont{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.interview .read-more{
+    margin-bottom: 20px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+   
+
+}
