@@ -1,16 +1,16 @@
 <div class="navContainer">
-  <nav class="navBar" (click)="close()" id="navbar">
+  <nav class="navBar" (click)="close('')" id="navbar">
     <div class="socialMedia">
       <img src="../../assets/icons/youtubeIco.png" alt="youtube" />
       <img src="../../assets/icons/instagramIco.png" alt="instagram" />
       <img src="../../assets/icons/facebookIco.png" alt="facebook" />
     </div>
     <div class="optionsClosed" id="options">
-      <a class="navbarItem" (click)="close()"> المقدمة </a>
-      <a class="navbarItem" (click)="close()"> الجدول الزمني </a>
-      <a class="navbarItem" (click)="close()"> البيانات </a>
-      <a class="navbarItem" (click)="close()"> المقابلات </a>
-      <a class="navbarItem" (click)="close()"> الخاتمة </a>
+      <a class="navbarItem" (click)="close('introScroll')"> المقدمة </a>
+      <a class="navbarItem" (click)="close('timelineScroll')"> الجدول الزمني </a>
+      <a class="navbarItem" (click)="close('statsScroll')"> البيانات </a>
+      <a class="navbarItem" (click)="close('interviewsScroll')"> المقابلات </a>
+      <a class="navbarItem" (click)="close('endingScroll')"> الخاتمة </a>
     </div>
     <div class="brandIMG">
       <img src="../../assets/img/maharatLogo.png" alt="Logo" />
