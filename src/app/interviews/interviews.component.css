@@ -1,81 +1,216 @@
-.interviewsTitle{
-    padding-right: 5%;
-    color:#858585;
-}
-.interviewBigBoy{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.interviewContent{
-    width: 100%;
-    height: 100%;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 500px));
-    grid-template-rows: 500px;
-    justify-content: center;
-    padding-inline: 2%;
-}
-.interview{
-    width: 100%;
-    height: 100%;
-    background-color: var(--light-blue);
-}
-@media only screen and (max-width: 675px) {
-    .interviewContent{
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 250px;        
-    }
-    .interview{
-        height: 300px;
-    }
+.interviewsTitle {
+  padding-right: 2%;
+  padding-bottom: 5%;
+  color: #858585;
 }
 
-.interview .title{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.interview .title h1{
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 5%;
-
-}
-.interviewText{
-    width: 100%;
-    height: 60%;
-  
-    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
-    mask-image: linear-gradient(180deg, #000 60%, transparent);
-
-}
-.interviewText p{
-    font-size: 12px;
-    color: #858585;
-    padding-inline: 3%;
+.interviewBigBoy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.buttonCont{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.interviewContent {
+  width: 100%;
+  height: 100%;
+  padding-inline: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
 }
-.interview .read-more{
+
+.interview {
+  width: 300px;
+  height: 300px;
+  background-color: #C8E6F5;
+  transition: all 400ms ease;
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .interview {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .interview {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .interviewContent {
+    flex-direction: column;
+  }
+
+  .interview {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .interview {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+.interviewLarger {
+  width: 600px;
+  height: 575px;
+  position: relative;
+  background-color: #C8E6F5;
+  transition: all 400ms ease;
+  box-shadow: 0px 5px 15px 9px #FFFFFF
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .interviewLarger {
+    width: 600px;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .interviewLarger {
+    width: 600px;
+    height: 600px
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .interviewLarger {
+    width: 90%;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .interviewLarger {
+    width: 90%;
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .interviewLarger {
+    height: 950px;
+  }
+}
+
+
+
+.title {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interviewText {
+  width: 100%;
+  height: 60%;
+  transition: all 400ms ease;
+
+}
+
+.read-more {
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: black;
+}
+.read-moreHidden{
+    display: none;
+}
+.arrow{
     margin-bottom: 20px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
     width: 100%;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrowHidden{
+    display: none;
+}
 
+.buttonCont {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .title {
+    height: 15%;
+  }
+
+  .interviewText {
+
+    height: 75%;
+    transition: all 400ms ease;
+
+  }
+
+  .buttonCont {
+    height: 10%;
+  }
+
+  .read-more {
+    margin-bottom: 5px;
+  }
+  .arrow{
+      margin-bottom: 5px;
+  }
+}
+
+
+.title h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5%;
+
+}
+
+.textEffect {
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+  mask-image: linear-gradient(180deg, #000 60%, transparent);
+  transition: mask-image 1200ms ease, -webkit-mask-image 1200ms ease;
+}
+
+
+
+/* .interviewTextBigger {
+    height: 100%;
+    min-height: auto;
+    transition: all 400ms ease;
+
+} */
+
+.interviewText p {
+  font-size: 12px;
+  color: #858585;
+  padding-inline: 3%;
+}
+
+
+
+
+.interviewsALL {
+  padding-top: 50px;
 }

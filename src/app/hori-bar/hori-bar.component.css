@@ -1,0 +1,93 @@
+.divideBarExtract{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.chartPart{
+    height: 100%;
+    width: 50%;
+}
+#horiBar{
+    height: 100%;
+}
+.extract{
+    width: 50%;
+    height: 100%;
+}
+.above{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.below{
+
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #969696;
+}
+.below p{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+}
+.extract{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.extractTitle{
+  
+    height: 10%;
+}
+.appearBox ,.reactionBox{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.box{
+    width: 35%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box span{
+    color: white;
+    font-family: bebas;
+    font-size: 300%;
+}
+.boxTitle span{
+    font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+
+}
+@media only screen and (max-width: 400px)
+{
+    .box span{
+        font-size: 250%;
+    }
+}
+.appearBox .box{
+    background-color: var(--light-blue);
+}
+.reactionBox .box{
+    background-color: var(--orange);
+}

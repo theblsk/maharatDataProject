@@ -1,11 +1,44 @@
-.chartContainer{
-  width: 100%;
+.donutCont {
   height: 100%;
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#myChart{
+
+.chartContainer {
+  height: 70%;
+  aspect-ratio: 1/1;
+}
+
+.donutText {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #969696;
+}
+
+.donutText p {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
 
 }
+
+.chartContainer span{
+  position: relative;
+  text-align: center;
+  font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+
+}
+
 
 
 .toolTipDesign {
@@ -19,24 +52,45 @@
   transition: all 300ms ease;
   width: auto;
   padding-inline: 10px;
-  height: 100px;
+  height: auto;
   font-size: 43px;
-  font-family: bebas;
+  font-family: droid;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
+  box-shadow: 0 0 0.1rem black;
+  backdrop-filter: blur(5px);
 }
-.toolTipUl{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.toolTipUl {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.toolTipUl p{
+
+.toolTipUl li{
+  width: 100%;
+  height: 100%;
+}
+
+.toolTipUl li p{
+  font-size: 1rem;
+  padding-inline: 20px;
+}
+@media only screen and (max-width: 450px)
+{
+  .toolTipUl li p{
+    font-size: 0.8rem;
+    padding-inline: 0px;
+  }
+}
+
+.toolTipUl p {
   margin: 0;
 }

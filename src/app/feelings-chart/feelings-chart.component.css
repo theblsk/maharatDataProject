@@ -1,0 +1,37 @@
+.feelingsCont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chartContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feelingsText {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #969696;
+  }
+  
+  .feelingsText p {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+  
+  }
+  

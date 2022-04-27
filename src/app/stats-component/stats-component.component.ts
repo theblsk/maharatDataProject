@@ -23,6 +23,7 @@ export class StatsComponentComponent implements OnInit {
     }
     let chosen = document.getElementById(entry);
     chosen.classList.toggle('active');
+   
   }
 
   show(entry: any) {

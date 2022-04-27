@@ -39,20 +39,22 @@
 
 } */
 
-.statPage{
-    width: 100%;
-    height: 100vh;
+.statPage {
+  width: 100%;
+  height: 100vh;
 
 }
-.statTitle{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: center;
 
-    color: #858585;
-    padding-right: 5%;
+.statTitle {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+
+  color: #858585;
+  padding-right: 5%;
 }
+
 .statContainer {
   width: 100%;
   height: 90%;
@@ -64,48 +66,64 @@
 
 
 .oneStat {
-  width: 50%;
+  height: 100%;
+  width: 70%;
 }
 
 
 
 .choose {
-  width: 50%;
+  width: 30%;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding-right: 3%;
 }
-.choose .list-group{
-    width: 70%
+
+.choose .list-group {
+  padding-top: 30%;
+  width: 100%
 }
-.choose .list-group-item{
-    background-color: #E5E5E5;
-    border: none;
+
+.choose .list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #858585;
+  font-size: clamp(0.8rem,0.7rem + 1vw,1.3rem);
+
+
 }
-.active{
-    color: #FF782D!important;
+
+.active {
+  color: #FF782D !important;
 }
-@media only screen and (max-width: 650px)
-{
-    .statContainer{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .choose{
-        width: 100%;
-        height: 30%;
-    }
-    .oneStat{
-        height: 70%;
-        width: 100%;
-        
-    }
-    .statPage{
-        height: 100vh;
-    }
+
+@media only screen and (max-width: 650px) {
+  .statContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .choose {
+    width: 100%;
+    height: 30%;
+  }
+
+  .oneStat {
+    height: 70%;
+    width: 100%;
+
+  }
+  .choose .list-group{
+      padding-top: 0%;
+  }
+
+  .statPage {
+    height: 100vh;
+  }
 }
-.hideChart{
-    display: none;
+
+.hideChart {
+  display: none;
 }

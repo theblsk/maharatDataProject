@@ -21,6 +21,7 @@
   color: #858585;
 }
 
+
 @media only screen and (max-width:500px)
 {
   .timelineTitle p{
@@ -28,3 +29,6 @@
     font-size: 0.7rem;
   }
 }
+
+/* timeline */
+

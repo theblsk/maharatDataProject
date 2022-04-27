@@ -30,3 +30,24 @@
 
     }
 }
+
+.conclusion{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerBox{
+    width: 85%;
+    height: 80%;
+    border: 1px #F5B96E  solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conclusion p{
+    width: 75%;
+    font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+
+}

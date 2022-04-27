@@ -1,98 +1,82 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
-
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+
 @Component({
-  selector: 'bar-chart',
-  templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  selector: 'feelings-chart',
+  templateUrl: './feelings-chart.component.html',
+  styleUrls: ['./feelings-chart.component.css'],
 })
-export class BarChartComponent implements OnInit {
+export class FeelingsChartComponent implements OnInit {
   chart;
   constructor() {
     Chart.register(...registerables);
     Chart.register(ChartDataLabels);
-   }
-   ngOnDestroy(){
+    Chart.defaults.font.size = 20
+    Chart.defaults.font.family = 'droid'
+  }
+  ngOnDestroy() {
     Chart.unregister(ChartDataLabels);
-   }
+  }
   ngOnInit(): void {
-    window.history.replaceState('','', '/')
+    window.history.replaceState('', '', '/');
     this.chart = new Chart('myChart', {
       type: 'bar',
-      
-      data: {
 
-        labels: ['الحزن', 'الخوف', 'الفرح', 'غضب'],
+      data: {
+        labels: ['غضب', 'إشمئزاز', 'خوف', 'فرح', 'حزن'],
         datasets: [
           {
             label: '31 يوليو/ 1 أغسطس',
-            data: [6,8,18,4],
+            data: [2770, 3372, 5906, 5326, 3939],
             backgroundColor: [
-              '#ff782d',
               '#f5b96e',
-   
+              '#ff782d',
               '#96d7fa',
               '#0f1e55',
-            ]
+              '#c8e6f5',
+            ],
           },
-          {
-            label: '4,5,6 آب',
-            data: [7,7,4,3],
-            backgroundColor: [
-              '#ff782d',
-              '#f5b96e',
-    
-              '#96d7fa',
-              '#0f1e55',
-            ]
-          }
         ],
       },
       options: {
-        layout:{
-          padding: 20
+        layout: {
+          padding: 20,
         },
-        
-        scales:{
+
+        scales: {
           y: {
             ticks: {
-              display: false
+              display: false,
             },
-            grid:{
+            grid: {
               display: false,
               drawBorder: false,
               drawOnChartArea: false,
               drawTicks: false,
-
-            }
+            },
           },
           x: {
-            grid:{
+            grid: {
               display: false,
               drawBorder: false,
               drawOnChartArea: false,
-              drawTicks: false
-            }
+              drawTicks: false,
+            },
           },
-
         },
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-        
           datalabels: {
             align: 'center',
             anchor: 'center',
             textAlign: 'center',
             font: {
               size: 20,
-              family: 'bebas'
+              family: 'bebas',
             },
             color: 'white',
-            formatter: function(value){
-              return value + '%'
-            }
           },
           tooltip: {
             enabled: false,
@@ -104,12 +88,18 @@ export class BarChartComponent implements OnInit {
             fullSize: true,
             font: {
               size: 20,
-              family: 'bebas'
+              family: 'bebas',
             },
           },
           legend: {
-            display: true,
-            position: 'bottom'
+            display: false,
+            position: 'bottom',
+            labels: {
+              font:{
+                family: 'droid',
+                size: 4
+              }
+            }
           },
         },
         elements: {
@@ -120,5 +110,4 @@ export class BarChartComponent implements OnInit {
       },
     });
   }
-
 }

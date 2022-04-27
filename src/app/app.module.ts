@@ -10,11 +10,12 @@ import { IntroComponent } from './intro/intro.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineItemComponent } from './timeline-item/timeline-item.component';
 import { StatsComponentComponent } from './stats-component/stats-component.component';
-import { NgChartsModule } from 'ng2-charts';
 import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { InterviewsComponent } from './interviews/interviews.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { HashDataComponent } from './hash-data/hash-data.component';
+import { HoriBarComponent } from './hori-bar/hori-bar.component';
+import { FeelingsChartComponent } from './feelings-chart/feelings-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { HashDataComponent } from './hash-data/hash-data.component';
     DonutChartComponent,
     InterviewsComponent,
     BarChartComponent,
-    HashDataComponent
+    HashDataComponent,
+    HoriBarComponent,
+    FeelingsChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgChartsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

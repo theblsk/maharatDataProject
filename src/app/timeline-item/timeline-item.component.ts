@@ -14,7 +14,6 @@ export class TimelineItemComponent implements OnInit {
   @Input() headLine = ''
   @Input() textContent = ''
   constructor() {}
-
   ngOnInit(): void {
     const imageObserver = new IntersectionObserver(
       (entries) => {
