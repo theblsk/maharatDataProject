@@ -21,23 +21,21 @@ export class HashDataComponent implements OnInit {
       type: 'line',
 
       data: {
-        labels: ['انفجار_بيروت#', 'كورونا_لبنان#', 'تفجير_بيروت# ', 'كورونا#'],
+        labels: ['BeirutBlast', 'Beirut_Explosion', '#كورونا_سوريا ', 'كورونا#'],
         datasets: [
-          {
-            label: 'الحدوث',
-            data: [8,8,8,15],
-            backgroundColor: '#96d7fa',
-            tension: 0.1,
-            borderColor: '#96d7fa',
-   
-          },
+        
+            
           {
             label: 'المداخلات',
-            data: [128,10,201,129],
-            backgroundColor: '#ff782d',
-            tension: 0.5,
+            data: [348,211,475,693],
+            backgroundColor: 'transparent',
+            pointBackgroundColor: '#96d7fa',
+            tension: 0.2,
             borderColor: '#ff782d',
-         
+            fill:true,
+            pointStyle: 'circle',
+            pointRadius: 10,
+            pointHoverRadius: 15
           }
         ],
       },
@@ -70,8 +68,8 @@ export class HashDataComponent implements OnInit {
             enabled: true,
           },
           title: {
-            display: false,
-            text: 'النسب المئوية للعواطف',
+            display: true,
+            text: 'المداخلات',
             align: 'center',
             fullSize: true,
             font: {
@@ -80,7 +78,7 @@ export class HashDataComponent implements OnInit {
             },
           },
           legend: {
-            display: true,
+            display: false,
             position: 'bottom',
             labels: {
               font: {

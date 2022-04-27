@@ -158,12 +158,20 @@
   align-items: center;
   justify-content: center;
 }
+.title h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5%;
+
+}
 
 @media only screen and (max-width: 450px) {
   .title {
     height: 15%;
   }
-
+  .title h1{
+    font-size: 1rem;
+  }
   .interviewText {
 
     height: 75%;
@@ -184,12 +192,7 @@
 }
 
 
-.title h1 {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 5%;
 
-}
 
 .textEffect {
   position: relative;
