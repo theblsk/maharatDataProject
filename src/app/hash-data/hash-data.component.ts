@@ -35,7 +35,8 @@ export class HashDataComponent implements OnInit {
             fill:true,
             pointStyle: 'circle',
             pointRadius: 10,
-            pointHoverRadius: 15
+            pointHoverRadius: 15,
+          
           }
         ],
       },
@@ -49,7 +50,12 @@ export class HashDataComponent implements OnInit {
         },
 
         scales: {
-
+          x:{
+            beginAtZero: true
+          },
+          y:{
+            beginAtZero: true
+          }
         },
         responsive: true,
         maintainAspectRatio: false,

@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
   scroll(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: 'smooth' });
   }
   showMenu() {
     let navOptions = document.getElementById('options');
@@ -30,6 +30,9 @@ export class NavbarComponent implements OnInit {
     }
     let el = document.getElementById(entry)
     this.scroll(el)
-
+  }
+  openPage(entry)
+  {
+    window.open(entry)
   }
 }
