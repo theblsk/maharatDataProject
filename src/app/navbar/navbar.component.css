@@ -2,32 +2,34 @@
   color: black;
   padding-left: 30px;
   animation: brandAnimate 1s ease-in-out forwards;
-  
+
 }
 
 .brand h2 {
-  font-size: clamp(1rem,1.2rem + 1vw, 1.4rem);
+  font-size: clamp(1rem, 1.2rem + 1vw, 1.4rem);
 
   margin: 0;
 }
 
 .navBar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    min-height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 9;
-    transition: background-color 400ms ease-in;
-  }
-.navBarScrolled{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 9;
+  transition: background-color 400ms ease-in;
+}
+
+.navBarScrolled {
   background-color: rgba(0, 0, 0, 0.55);
 
 }
+
 @keyframes navAnimate {
   from {
     opacity: 0;
@@ -126,17 +128,19 @@
 
 /* Maharat Added */
 
-.brandIMG{
+.brandIMG {
   height: 100%;
   width: 25%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.brandIMG img{
-  margin-top: 20px;
+
+.brandIMG img {
+  max-width: 40%;
 }
-.socialMedia{
+
+.socialMedia {
   width: 25%;
   height: 100%;
   display: flex;
@@ -144,44 +148,63 @@
   justify-content: center;
   z-index: 100;
 }
-.socialMedia img{
-  padding-left: 10px;
-  padding-right: 10px;
+
+.socialMedia img {
+  padding-inline: 10px;
+  width: 50px;
 }
 
+@media only screen and (max-width: 800px) {
+  .socialMedia {
+    width: 50%;
+  }
 
-@media only screen and (max-width: 600px){
-  .options{
+  .brandIMG {
+    width: 50%;
+  }
+
+  .socialMedia img {
+    padding-inline: 4px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .options {
     width: 60%;
   }
 }
 
-@media only screen and (max-width: 400px){
-  .brandIMG{
+@media only screen and (max-width: 400px) {
+  .brandIMG {
     height: 100%;
-    width: 25%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
+
   }
-  .brandIMG img{
-    margin-top: 20px;
-    max-width: 100%;
+
+  .brandIMG img {
+    padding-inline: 3px;
+    max-width: 40%;
   }
-  .navBar{
+
+  .navBar {
     justify-content: space-between;
   }
-  .socialMedia{
-    margin-right: 65px;
+
+  .socialMedia {
+    margin-right: 35px;
   }
-  .socialMedia img{
-    padding-left: 5px;
-    padding-right: 5px;
+
+  .socialMedia img {
+
+    width: 25px;
   }
-  .options{
+
+  .options {
     width: 80%;
   }
-  
-}
 
+}

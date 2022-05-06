@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,12 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'maharatDataProj';
 
-
-
-  ngOnInit(): void{
-
-  }
-
+  ngOnInit() {}
 
   hide() {
     let nav = document.getElementById('options');

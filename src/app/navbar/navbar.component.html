@@ -1,27 +1,67 @@
 <div class="navContainer">
   <nav class="navBar" (click)="close('')" id="navbar">
     <div class="socialMedia">
-      <a (click)="openPage('https://www.youtube.com/user/MaharatFoundation')" href="#">
+      <a
+        (click)="openPage('https://www.youtube.com/user/MaharatFoundation')"
+        href="#"
+      >
         <img src="../../assets/icons/youtubeIco.png" alt="youtube" />
       </a>
-      <a (click)="openPage('https://www.instagram.com/maharatfoundation/')" href="#">
-        <img src="../../assets/icons/instagramIco.png" alt="instagram" />
+      <a
+        (click)="openPage('https://www.instagram.com/maharatfoundation/')"
+        href="#"
+      >
+        <img
+          src="../../assets/icons/instagramIco.png"
+          alt="instagram"
+          id="instagram"
+        />
       </a>
-      <a (click)="openPage('https://www.facebook.com/MaharatFoundation')" href="#">
+      <a
+        (click)="openPage('https://www.facebook.com/MaharatFoundation')"
+        href="#"
+      >
         <img src="../../assets/icons/facebookIco.png" alt="facebook" />
+      </a>
+      <a
+        (click)="openPage('https://twitter.com/Maharat_Lebanon')"
+        href="#"
+      >
+        <img src="../../assets/icons/twitterIco.png" alt="facebook" />
       </a>
     </div>
     <div class="optionsClosed" id="options">
-      <a href="#introScroll" class="navbarItem" (click)="close('introScroll')"> المقدمة </a>
-      <a href="#timelineScroll" class="navbarItem" (click)="close('timelineScroll')">
+      <a href="#introScroll" class="navbarItem" (click)="close('introScroll')">
+        المقدمة
+      </a>
+      <a
+        href="#timelineScroll"
+        class="navbarItem"
+        (click)="close('timelineScroll')"
+      >
         الجدول الزمني
       </a>
-      <a href="#statsScroll" class="navbarItem" (click)="close('statsScroll')"> البيانات </a>
-      <a href="#interviewsScroll" class="navbarItem" (click)="close('interviewsScroll')"> المقابلات </a>
-      <a href="#endingScroll" class="navbarItem" (click)="close('endingScroll')"> الخاتمة </a>
+      <a href="#statsScroll" class="navbarItem" (click)="close('statsScroll')">
+        البيانات
+      </a>
+      <a
+        href="#interviewsScroll"
+        class="navbarItem"
+        (click)="close('interviewsScroll')"
+      >
+        المقابلات
+      </a>
+      <a
+        href="#endingScroll"
+        class="navbarItem"
+        (click)="close('endingScroll')"
+      >
+        الخاتمة
+      </a>
     </div>
     <div class="brandIMG">
-      <img src="../../assets/img/maharatLogo.png" alt="Logo" />
+      <img src="../../assets/icons/nduLogo.png" alt="LogoNDU" />
+      <img src="../../assets/icons/maharatLogo.png" alt="Logo" />
     </div>
   </nav>
 </div>

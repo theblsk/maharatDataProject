@@ -44,6 +44,9 @@
   height: 100vh;
 
 }
+.List{
+  list-style: inside;
+}
 
 .statTitle {
   width: 100%;

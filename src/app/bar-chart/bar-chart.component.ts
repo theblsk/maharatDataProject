@@ -29,22 +29,16 @@ export class BarChartComponent implements OnInit {
             label: '31 يوليو/ 1 أغسطس',
             data: [6,8,18,4],
             backgroundColor: [
-              '#ff782d',
-              '#f5b96e',
-   
-              '#96d7fa',
-              '#0f1e55',
+              
+              '#96d7fa'
+        
             ]
           },
           {
             label: '4,5,6 آب',
             data: [7,7,4,3],
             backgroundColor: [
-              '#ff782d',
-              '#f5b96e',
-    
-              '#96d7fa',
-              '#0f1e55',
+              '#ff782d'
             ]
           }
         ],

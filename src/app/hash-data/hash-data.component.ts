@@ -75,7 +75,7 @@ export class HashDataComponent implements OnInit {
           },
           title: {
             display: true,
-            text: 'المداخلات',
+            text: 'أكثر الhashtags تفاعلاً بين تموز و أيلول ٢٠٢٠',
             align: 'center',
             fullSize: true,
             font: {
