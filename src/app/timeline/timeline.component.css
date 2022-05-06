@@ -23,6 +23,7 @@
   padding-bottom: 20px;
   font-size: clamp(0.7rem,0.6rem + 1.1vw,1.3rem);
   font-weight: 900;
+  text-align: center;
 
 }
 .timelineTitle p{
