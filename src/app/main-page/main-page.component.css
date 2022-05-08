@@ -1,111 +1,132 @@
-.restOfContent{
+.restOfContent {}
+
+
+.Test {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
-.Test{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.header {
+  background-image: url('../../assets/img/carousel2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-
-.header{
-    background-image: url('../../assets/img/carousel3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+.headerText {
+  width: 65%;
+  margin-right: 8%;
+  margin-bottom: 10%;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  height: fit-content;
+  clip-path: inset(0 0 round 25px);
+  padding: 20px;
 }
 
-.headerText{
-    width: 65%;
-    padding-right: 8%;
-    padding-bottom: 10%;
-}
-.headerText span{
-    color: #FFFF;
-    font-size: clamp(35px,30px + 5vw,43px);
-}
-@media only screen and (max-width: 800px)
-{
-    .headerText{
-        width: 85%;
-        padding-bottom: 20%;
-    }
-    .headerText span{
-        font-size: 6vw;
+.headerText span {
+  color: #FFFF;
+  font-size: clamp(35px, 30px + 5vw, 43px);
 
-    }
 }
 
-.conclusion{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.innerBox{
+@media only screen and (max-width: 800px) {
+  .headerText {
     width: 85%;
-    height: 60%;
-    border: 1px #F5B96E  solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.conclusion p{
-    width: 75%;
-    font-size: clamp(0.4rem,0.3rem + 1vw,1rem);
+    margin-bottom: 20%;
+  }
 
-}
-footer{
-    height: 20vh;
-    background-color: #A9A9A9;
-    color: white;
-    padding-block: 90px;
-}
-small{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: large;
-    font-weight: 900;
-}
-small p{
-    padding-inline: 2%;
-    text-align: center;
+  .headerText span {
+    font-size: 6vw;
+
+  }
 }
 
-@media only screen and (max-width: 650px)
-{
-    small{
-        font-size: medium;
+.conclusion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.innerBox {
+  width: 85%;
+  height: 60%;
+  min-height: auto;
+  border: 1px #F5B96E solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.conclusion p {
+  width: 75%;
+  font-size: clamp(0.6rem, 0.5rem + 1vw, 1rem);
+  padding: 20px;
+
+}
+@media only screen and (max-width: 500px){
+    .conclusion p{
+        width: 90%;
     }
 }
-.endingTitle{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-inline: 4%;
+
+footer {
+  height: 20vh;
+  background-color: #A9A9A9;
+  color: white;
+  padding-block: 90px;
+}
+
+small {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+  font-weight: 900;
+}
+
+small p {
+  padding-inline: 2%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  small {
+    font-size: medium;
+  }
+}
+
+.endingTitle {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 4%;
 
 }
-.endingTitle h1{
- 
-    color: #858585;
-    padding: 0;
+
+.endingTitle h1 {
+
+  color: #858585;
+  padding: 0;
 }

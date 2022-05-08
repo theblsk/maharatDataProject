@@ -29,6 +29,7 @@
 .timelineTitle p{
   width: 65%;
   color: #858585;
+  font-size: clamp(0.7rem, 0.6rem + 1vw, 1.2rem);
 }
 
 
@@ -36,7 +37,6 @@
 {
   .timelineTitle p{
     width: 90%;
-    font-size: 0.7rem;
   }
 }
 

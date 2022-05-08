@@ -82,7 +82,11 @@ export class DonutChartComponent implements OnInit {
           'شعروا ب' + item.toString().replace(/[0-9]/g, '').replace(':', '');
         textLabel = this.renderer.createText(strSecond);
         tooltTipBodyP.appendChild(textLabel);
-        tooltTipBodyP.style.color = colors.backgroundColor;
+        if (colors.backgroundColor !== '#c8e6f5')
+          tooltTipBodyP.style.color = colors.backgroundColor;
+        else{
+          tooltTipBodyP.style.color = '#96d7fa';
+        }
       });
       while (toolUL.firstChild) {
         toolUL.firstChild.remove();
