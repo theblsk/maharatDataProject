@@ -27,6 +27,17 @@ export class MainPageComponent implements OnInit {
     {threshold: 0.1})
 
     introObserver.observe(document.getElementById('restOfContent') as Element)
+
+    const creditsObserver = new IntersectionObserver(entries=>{
+      const credits = entries[0]
+      const creditsContainer = document.getElementById('creditsContainer')
+      if (credits.isIntersecting)
+      {
+        creditsContainer.style.animation = 'textAppear 800ms ease'
+      }
+      
+    })
+    creditsObserver.observe(document.getElementById('credits') as Element)
   }
 
 }
