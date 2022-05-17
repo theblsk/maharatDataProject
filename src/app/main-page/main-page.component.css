@@ -80,20 +80,32 @@
   padding: 20px;
 
 }
-@media only screen and (max-width: 500px){
-    .conclusion p{
-        width: 90%;
-    }
+
+@media only screen and (max-width: 500px) {
+  .conclusion p {
+    width: 90%;
+  }
 }
 
-footer {
-  height: 20vh;
+.footer {
+  height: auto;
+  width: 100%;
   background-color: #A9A9A9;
   color: white;
   padding-block: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-small {
+.footer hr {
+  width: 4px;
+  min-height: 300px;
+  height: 100%;
+}
+
+.leftFooter,
+.rightFooter {
   height: 100%;
   width: 100%;
   display: flex;
@@ -104,14 +116,27 @@ small {
   font-weight: 900;
 }
 
-small p {
-  padding-inline: 2%;
+
+.footer p {
+  padding-inline: 7%;
   text-align: center;
 }
 
 @media only screen and (max-width: 650px) {
-  small {
+
+  .leftFooter,
+  .rightFooter {
     font-size: medium;
+  }
+
+  .footer hr {
+    min-height: 2px;
+  
+    width: 80%;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
 
@@ -135,42 +160,46 @@ small p {
 /* credits  */
 
 
-.credits{
-    width: 100%;
-    height: auto;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.credits {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 }
-.credits h1{
-    padding: 25px 0px 25px 25px;
-}
-.credits li{
-    margin-bottom: 15px;
-    font-size: clamp(0.6rem, 0.5rem + 1vw, 1rem);
-}
-.creditsContainer{
-    height: auto;
-    width: auto;
-    padding: 25px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0 0 0.5rem #ff782d;
+
+.credits h1 {
+  padding: 25px 0px 25px 25px;
 }
 
-@keyframes textAppear{
-    from{
-        transform: translateX(75px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
+.credits li {
+  margin-bottom: 15px;
+  font-size: clamp(0.6rem, 0.5rem + 1vw, 1rem);
+}
+
+.creditsContainer {
+  height: auto;
+  width: auto;
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 0.5rem #ff782d;
+}
+
+@keyframes textAppear {
+  from {
+    transform: translateX(75px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
